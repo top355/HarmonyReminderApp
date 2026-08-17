@@ -1,5 +1,5 @@
 {
-  "modelVersion": "5.0.0",
+  "modelVersion": "6.1.1",
   "name": "harmony-reminder-app",
   "version": "1.0.0",
   "description": "HarmonyOS native reminder app using reminderAgentManager",
