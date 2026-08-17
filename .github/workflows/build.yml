@@ -34,6 +34,17 @@ jobs:
           java-version: "17"
           distribution: "temurin"
 
+      - name: Configure npm registry for hvigor
+        run: |
+          echo 'registry=https://repo.huaweicloud.com/repository/npm/' > ~/.npmrc
+          echo '@ohos:registry=https://repo.harmonyos.com/npm/' >> ~/.npmrc
+          echo 'strict-ssl=false' >> ~/.npmrc
+
+      - name: Configure environment
+        run: |
+          echo "DEVECO_SDK_HOME=$HOME/ohos-sdk/command-line-tools/sdk" >> $GITHUB_ENV
+          echo "HOS_SDK_HOME=$HOME/ohos-sdk/command-line-tools/sdk" >> $GITHUB_ENV
+
       - name: Configure ohpm registry
         run: |
           ohpm config set registry https://ohpm.openharmony.cn/ohpm/
@@ -43,6 +54,8 @@ jobs:
         run: ohpm install --all
 
       - name: Build HAP (debug)
+        env:
+          DEVECO_SDK_HOME: ${{ env.DEVECO_SDK_HOME }}
         run: |
           hvigorw clean --no-daemon
           hvigorw assembleHap --mode module -p product=default -p buildMode=debug --no-daemon --stacktrace
