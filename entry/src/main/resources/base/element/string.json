@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "提醒模块"
+    },
+    {
+      "name": "entry_ability_desc",
+      "value": "提醒入口"
+    },
+    {
+      "name": "entry_ability_label",
+      "value": "提醒"
+    },
+    {
+      "name": "permission_reminder_reason",
+      "value": "用于定时提醒和闹钟功能"
+    },
+    {
+      "name": "permission_background_reason",
+      "value": "保持提醒在后台运行"
+    }
+  ]
+}

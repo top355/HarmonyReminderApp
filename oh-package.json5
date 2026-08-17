@@ -1,0 +1,12 @@
+{
+  "name": "harmony-reminder-app",
+  "version": "1.0.0",
+  "description": "HarmonyOS native reminder app using reminderAgentManager",
+  "main": "",
+  "author": "example",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.6"
+  }
+}
