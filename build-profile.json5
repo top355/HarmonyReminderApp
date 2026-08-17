@@ -10,8 +10,8 @@
       }
     ],
     "buildModeSet": [
-      { "name": "debug", "arkOptions": { "obfuscation": { "ruleFiles": [] } } },
-      { "name": "release", "arkOptions": { "obfuscation": { "ruleFiles": [] } } }
+      { "name": "debug" },
+      { "name": "release" }
     ]
   },
   "modules": [
